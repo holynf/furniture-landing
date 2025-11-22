@@ -1,41 +1,41 @@
 const Footer = () => {
     return (
-        <section className={"bg-[#F7F7F7] h-[462px] px-[190px]"}>
-            <div className={"access grid grid-cols-4 py-[118px] justify-items-center"}>
-                <div className={"flex flex-col gap-8"}>
-                    <div className={"text-[#1E1E1E] text-[26px] font-bold"}>Panto</div>
+        <footer>
+            <div className={"footer-wrapper"}>
+                <div className={"logo-section"}>
+                    <div className={"logo"}>Panto</div>
                     <span>
                         The advantage of hiring a workspace with us is that givees you comfortable
                         service and all-around facilities.
                     </span>
                 </div>
-                <div className={"flex flex-col gap-5"}>
-                    <span className={"text-[#F6973F]"}>Services</span>
+                <div className={"access"}>
+                    <span className={"title"}>Services</span>
                     <span>Email Marketing</span>
                     <span>Campaigns</span>
                     <span>Branding</span>
                 </div>
-                <div className={"flex flex-col gap-5"}>
-                    <span className={"text-[#F6973F]"}>Furniture</span>
+                <div className={"access"}>
+                    <span className={"title"}>Furniture</span>
                     <span>Beds</span>
                     <span>Chair</span>
                     <span>All</span>
                 </div>
-                <div className={"flex flex-col gap-5"}>
-                    <span className={"text-[#F6973F]"}>Follow Us</span>
+                <div className={"access"}>
+                    <span className={"title"}>Follow Us</span>
                     <span>Facebook</span>
                     <span>Twitter</span>
                     <span>Instagram</span>
                 </div>
             </div>
-            <div className='rights flex justify-between items-center'>
-                <span className={"opacity-50"}>Copyright &copy; 2021</span>
-                <ul className={"flex items-center gap-10"}>
+            <div className='copyright'>
+                <span className={"text"}>Copyright &copy; 2021</span>
+                <ul className={"links"}>
                     <li>Terms & Conditions</li>
                     <li>Privacy Policy</li>
                 </ul>
             </div>
-        </section>
+        </footer>
     );
 };
 export default Footer;

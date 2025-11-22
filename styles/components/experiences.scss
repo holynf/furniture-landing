@@ -1,0 +1,65 @@
+
+.experiences {
+	padding-block: 270px;
+	display: flex;
+	gap: 160px;
+	padding-inline-end: 160px;
+
+	&__visual {
+		position: relative;
+		flex-shrink: 0;
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&__bg {
+		position: absolute;
+		z-index: -10;
+
+		&--top {
+			top: -64px;
+			left: 0;
+		}
+
+		&--right {
+			top: 80px;
+			right: -64px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&__label {
+		text-transform: uppercase;
+		color: #e58411;
+	}
+
+	&__title {
+		color: #1e1e1e;
+		font-weight: 700;
+		font-size: 42px;
+		margin: 0;
+	}
+
+	&__desc {
+		color: #1e1e1e;
+		font-size: 18px;
+		line-height: 1.85;
+	}
+
+	&__more {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		color: #e58411;
+		cursor: pointer;
+	}
+}

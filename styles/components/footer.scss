@@ -1,0 +1,31 @@
+footer {
+  @apply bg-[#F7F7F7] h-[462px] px-[190px];
+  .footer-wrapper {
+    @apply grid grid-cols-4 py-[118px] justify-items-center;
+    .logo-section {
+      @apply flex flex-col gap-8;
+
+      .logo {
+        @apply text-[#1E1E1E] text-[26px] font-bold;
+      }
+    }
+    .access{
+      @apply flex flex-col gap-5;
+
+      .title {
+        @apply text-[#F6973F];
+      }
+    }
+  }
+  .copyright{
+    @apply flex justify-between items-center;
+
+    .text {
+      @apply opacity-50;
+    }
+
+    .links {
+      @apply flex items-center gap-10;
+    }
+  }
+}

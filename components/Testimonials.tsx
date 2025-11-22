@@ -20,23 +20,17 @@ const Testimonials = () => {
                     {[1, 2, 3, 4, 5].map((item) => (
                         <SwiperSlide key={item} className={"testimonials-slider"}>
                             <div className={"content"}>
-                                <img
-                                    src='/images/user.png'
-                                    alt='user image'
-                                    className={"size-[65px] rounded-full  bg-white"}
-                                />
-                                <p className={"text-[#1E1E1E] font-bold text-[18px]"}>Bang Upin</p>
-                                <p className={"text-[#1E1E1E] font-normal text-[12px]"}>
-                                    Pedagang Asongan
-                                </p>
-                                <p className={"text-center px-[42px] py-4 text-[14px]"}>
+                                <img src='/images/user.png' alt='user image' />
+                                <p className={"content__username"}>Bang Upin</p>
+                                <p className={"content__user_sub"}>Pedagang Asongan</p>
+                                <p className={"content__text"}>
                                     “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan
                                     terlihat mahal“
                                 </p>
                                 <img
                                     src='/icon/five-star.svg'
                                     alt='star icon'
-                                    className={"w-[103px]"}
+                                    className={"content__star"}
                                 />
                             </div>
                         </SwiperSlide>

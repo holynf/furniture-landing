@@ -30,63 +30,47 @@ function Products() {
                 {steps.map((step, index) => (
                     <button
                         key={index}
-                        className={clsx("tab-button", { "bg-white": activeStep === step.id })}
+                        className={clsx("tab-button", { "is-active": activeStep === step.id })}
                         onClick={() => setActiveStep(step.id)}
                     >
                         {step.title}
                     </button>
                 ))}
             </div>
-            <div className={"px-32"}>
+            <div className={"products__carousel"}>
                 <Swiper
                     slidesPerView={4}
                     spaceBetween={42}
                     navigation={true}
                     modules={[Pagination, Navigation]}
-                    className='mySwiper !pt-32'
+                    className={'mySwiper products__swiper'}
                 >
                     {[1, 2, 3, 4, 5].map((item) => (
                         <SwiperSlide
                             key={item}
-                            className={
-                                "!h-[492px] !w-[268px] bg-white rounded-[20px] flex flex-col -z-10"
-                            }
+                            className={'product-card'}
                         >
-                            <div className='!h-[239px] shrink-0 bg-[#FAFAFA] px-6 pb-8'>
-                                <div className={"h-full relative"}>
-                                    <img
-                                        src='/images/chair.png'
-                                        className={"absolute -bottom-5 right-0 !z-[9999]"}
-                                        alt='product image'
-                                    />
+                            <div className={'product-card__media'}>
+                                <div className={'product-card__media-inner'}>
+                                    <img src={'/images/chair.png'} className={'product-card__image'} alt='product image' />
                                 </div>
                             </div>
-                            <div className={"grow p-[21px] flex flex-col h-full"}>
-                                <div className={"flex flex-col gap-2 shrink-0 pb-16"}>
-                                    <p className={"text-[#8D8D8D]"}>Chair</p>
-                                    <p className={"text-[#0D1B39] font-bold text-xl"}>
-                                        Sakarias Armchair
-                                    </p>
-                                    <img
-                                        src='/icon/five-star.svg'
-                                        alt='star icon'
-                                        className={"w-[103px]"}
-                                    />
+                            <div className={'product-card__body'}>
+                                <div className={'product-card__info'}>
+                                    <p className={'product-card__category'}>Chair</p>
+                                    <p className={'product-card__title'}>Sakarias Armchair</p>
+                                    <img src={'/icon/five-star.svg'} alt='star icon' className={'product-card__stars'} />
                                 </div>
-                                <div className={"flex justify-between items-end "}>
-                                    <span className={"text-[#0D1B39] font-bold text-xl"}>123$</span>
-                                    <img
-                                        className={"size-[48px] cursor-pointer"}
-                                        src='/icon/add.svg'
-                                        alt='add icon'
-                                    />
+                                <div className={'product-card__footer'}>
+                                    <span className={'product-card__price'}>123$</span>
+                                    <img className={'product-card__add'} src={'/icon/add.svg'} alt='add icon' />
                                 </div>
                             </div>
                         </SwiperSlide>
                     ))}
                 </Swiper>
             </div>
-            <div className={"pt-[60px] flex items-center gap-3 text-[#E58411] w-fit mx-auto"}>
+            <div className={'products__viewall'}>
                 <span>View All</span>
                 <span>
                     <img src='/icon/arrow.svg' alt='arrow svg' />
