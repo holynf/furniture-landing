@@ -26,18 +26,18 @@ const datas: DataType[] = [
 function Benefits() {
     return (
         <article className={"benefits"}>
-            <section className={"text-[42px] font-bold shrink-0 "}>
+            <section className={"benefits__heading"}>
                 Why <br /> Choosing Us
             </section>
-            <section className={"grid grid-cols-3 gap-7"}>
+            <section className={"benefits__grid"}>
                 {datas.map((data, index) => (
-                    <div key={index} className={"flex flex-col gap-5"}>
-                        <h3 className={"font-bold text-[24px]"}>{data.title}</h3>
-                        <span className={"text-[#1E1E1E] text-base"}>{data.content}</span>
-                        <div className={"flex items-center gap-3 text-[#E58411]"}>
+                    <div key={index} className={"benefits__item"}>
+                        <h3 className={"benefits__item-title"}>{data.title}</h3>
+                        <span className={"benefits__item-content"}>{data.content}</span>
+                        <div className={"benefits__item-more"}>
                             <span>More Info</span>
                             <span>
-                                <img src='/icon/arrow.svg' alt='arrow svg' />
+                                <img src={'/icon/arrow.svg'} alt={'arrow svg'} />
                             </span>
                         </div>
                     </div>
