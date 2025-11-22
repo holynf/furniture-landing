@@ -9,6 +9,7 @@ const Testimonials = () => {
                 <p className={"title"}>testimonials</p>
                 <p className={"subtitle"}>Our Client Reviews</p>
             </div>
+
             <div>
                 <Swiper
                     slidesPerView={3}
