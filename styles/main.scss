@@ -1,0 +1,16 @@
+// partials
+@use "partials/fonts";
+
+// pages
+@use "pages/main-page";
+
+// components
+@use "components/landing";
+@use "components/benefits";
+@use "components/products";
+@use "components/experiences";
+@use "components/testimonials";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,52 @@
+.landing {
+  background-image: url("/images/landing-image.png");
+  @apply pt-10 px-20 text-white  bg-no-repeat bg-center bg-cover h-[1084px];
+
+  .navbar {
+    @apply grid grid-cols-3 items-center;
+
+    .logo {
+      @apply font-bold text-3xl;
+    }
+
+    .list {
+      @apply flex gap-16 cursor-pointer;
+
+      .iconable-list-item {
+        @apply flex items-center gap-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110;
+      }
+    }
+
+    .cart-icon {
+      @apply ms-auto relative cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110;
+
+      .cart-badge {
+        @apply absolute -right-1 -top-1 h-5 w-5 bg-[#E58411] rounded-full p-1 flex items-center justify-center;
+      }
+    }
+  }
+
+  .landing-text-content {
+    @apply pt-24 flex flex-col justify-center items-center;
+
+    .banner-heading-text {
+      @apply leading-[130%] text-white uppercase text-[80px] font-bold mb-4 text-center;
+    }
+
+    .banner-content-text {
+      @apply mt-5 text-[24px] font-normal leading-[160%] text-center mb-10;
+    }
+
+    .search-box {
+      @apply flex justify-between items-center w-[344px] h-[56px] p-2 rounded-[42px] border-[0.86px] backdrop-blur-sm;
+
+      .input-text {
+        @apply ps-2 grow font-normal text-[18px] opacity-[80%] leading-[150%];
+      }
+
+      .icon {
+        @apply w-10 h-10 rounded-full bg-[#E58411] flex justify-center items-center cursor-pointer flex-shrink-0;
+      }
+    }
+  }
+}

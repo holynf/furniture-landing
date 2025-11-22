@@ -1,0 +1,42 @@
+//.testimonials {
+// @apply pb[214px] px-[127px];
+//
+//  .heading {
+//      @apply flex flex-col gap-5 w-fit mx-auto text-center;
+//  }
+//}
+
+
+.testimonials-wrapper {
+  @apply pb-[214px] px-[127px];
+
+  .heading {
+    @apply flex flex-col gap-5 w-fit mx-auto text-center pb-[60px];
+
+    .title {
+      @apply uppercase text-[#E58411];
+    }
+    .subtitle {
+      @apply text-[#1E1E1E] font-bold text-[42px];
+    }
+  }
+
+  .testimonials-slider {
+    width: 370px !important;
+    height: 476px !important;
+    background-image: url("/images/test1.png");
+    @apply rounded-[20px] flex flex-col p-4 bg-red-300 relative bg-no-repeat bg-cover;
+
+
+    .content {
+      width: calc(100% - 32px);
+      background-image: url("/images/Union.png");
+      @apply h-[239px] shrink-0  rounded-xl absolute bottom-4 right-4 flex flex-col items-center bg-no-repeat bg-cover;
+    }
+  }
+
+  .swiper-button-next,.swiper-button-prev{
+    @apply bg-white size-[50px] rounded-full p-4 text-black;
+  }
+}
+
