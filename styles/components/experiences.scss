@@ -1,65 +1,44 @@
 
 .experiences {
-	padding-block: 270px;
-	display: flex;
-	gap: 160px;
-	padding-inline-end: 160px;
+  @apply py-[270px] flex gap-40 pr-40;
 
-	&__visual {
-		position: relative;
-		flex-shrink: 0;
+  &__visual {
+    @apply relative flex-shrink-0;
 
-		img {
-			display: block;
-			max-width: 100%;
-			height: auto;
-		}
-	}
+    img {
+      @apply block max-w-full h-auto;
+    }
+  }
 
-	&__bg {
-		position: absolute;
-		z-index: -10;
+  &__bg {
+    @apply absolute -z-10;
 
-		&--top {
-			top: -64px;
-			left: 0;
-		}
+    &--top {
+      @apply -top-16 left-0;
+    }
 
-		&--right {
-			top: 80px;
-			right: -64px;
-		}
-	}
+    &--right {
+      @apply top-20 -right-16;
+    }
+  }
 
-	&__content {
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-	}
+  &__content {
+    @apply flex flex-col gap-5;
+  }
 
-	&__label {
-		text-transform: uppercase;
-		color: #e58411;
-	}
+  &__label {
+    @apply uppercase text-[#E58411];
+  }
 
-	&__title {
-		color: #1e1e1e;
-		font-weight: 700;
-		font-size: 42px;
-		margin: 0;
-	}
+  &__title {
+    @apply text-[#1E1E1E] font-bold text-[42px] m-0;
+  }
 
-	&__desc {
-		color: #1e1e1e;
-		font-size: 18px;
-		line-height: 1.85;
-	}
+  &__desc {
+    @apply text-[#1E1E1E] text-[18px] leading-[185%];
+  }
 
-	&__more {
-		display: flex;
-		align-items: center;
-		gap: 12px;
-		color: #e58411;
-		cursor: pointer;
-	}
+  &__more {
+    @apply flex items-center gap-3 text-[#E58411] cursor-pointer;
+  }
 }

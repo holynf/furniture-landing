@@ -1,47 +1,72 @@
 .benefits {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 128px 80px;
-  gap: 128px;
+  /* Mobile-first base styles */
+  @apply flex flex-col items-stretch px-6 py-12 gap-8;
 
   &__heading {
-    font-size: 42px;
-    font-weight: 700;
-    flex-shrink: 0;
-    margin: 0;
+    @apply text-[28px] font-bold text-center m-0;
   }
 
   &__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
-    width: 100%;
+    @apply grid grid-cols-1 gap-6 w-full;
   }
 
   &__item {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    @apply flex flex-col gap-5;
   }
 
   &__item-title {
-    font-weight: 700;
-    font-size: 24px;
-    margin: 0;
+    @apply font-bold text-[18px] m-0;
   }
 
   &__item-content {
-    color: #1E1E1E;
-    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    @apply text-[#1E1E1E];
   }
 
   &__item-more {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: #E58411;
-    cursor: pointer;
+    @apply flex items-center gap-3 text-[#E58411] cursor-pointer;
   }
 
+  /* Small screens (sm: 640px) tweaks */
+  @screen sm {
+    @apply px-8 py-16 gap-10;
+
+    &__heading {
+      @apply text-[32px];
+    }
+
+    &__grid {
+      @apply grid-cols-2 gap-6;
+    }
+  }
+
+  /* Medium screens (md: 768px) */
+  @screen md {
+    @apply px-16 py-20 gap-12;
+
+    &__heading {
+      @apply text-[36px] text-left;
+    }
+
+    &__grid {
+      @apply grid-cols-2 gap-7;
+    }
+  }
+
+  /* Large screens (lg: 1024px) - desktop layout */
+  @screen lg {
+    @apply flex-row items-center justify-between px-20 py-32 gap-32;
+
+    &__heading {
+      @apply text-[42px] font-bold flex-shrink-0 m-0 text-left;
+    }
+
+    &__grid {
+      @apply grid-cols-3 gap-7;
+    }
+  }
 }

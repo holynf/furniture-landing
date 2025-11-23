@@ -7,6 +7,7 @@
     .title {
       @apply uppercase text-[#E58411];
     }
+
     .subtitle {
       @apply text-[#1E1E1E] font-bold text-[42px];
     }
@@ -24,7 +25,7 @@
       background-image: url("/images/Union.png");
       @apply h-[239px] shrink-0  rounded-xl absolute bottom-4 right-4 flex flex-col items-center bg-no-repeat bg-cover;
 
-      &__username{
+      &__username {
         @apply text-[#1E1E1E] font-bold text-[18px];
       }
 
@@ -32,7 +33,7 @@
         @apply text-[#1E1E1E] font-normal text-[12px];
       }
 
-      &__text{
+      &__text {
         @apply text-center px-[42px] py-4 text-[14px];
       }
 
@@ -42,7 +43,7 @@
     }
   }
 
-  .swiper-button-next,.swiper-button-prev{
+  .swiper-button-next, .swiper-button-prev {
     @apply bg-white size-[50px] rounded-full p-4 text-black;
   }
 }

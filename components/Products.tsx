@@ -7,6 +7,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import ActionButton from "@/components/ActionButton";
 
 interface StepType {
     id: number;
@@ -43,39 +44,43 @@ function Products() {
                     spaceBetween={42}
                     navigation={true}
                     modules={[Pagination, Navigation]}
-                    className={'mySwiper products__swiper'}
+                    className={"mySwiper products__swiper"}
                 >
                     {[1, 2, 3, 4, 5].map((item) => (
-                        <SwiperSlide
-                            key={item}
-                            className={'product-card'}
-                        >
-                            <div className={'product-card__media'}>
-                                <div className={'product-card__media-inner'}>
-                                    <img src={'/images/chair.png'} className={'product-card__image'} alt='product image' />
+                        <SwiperSlide key={item} className={"product-card"}>
+                            <div className={"product-card__media"}>
+                                <div className={"product-card__media-inner"}>
+                                    <img
+                                        src={"/images/chair.png"}
+                                        className={"product-card__image"}
+                                        alt='product image'
+                                    />
                                 </div>
                             </div>
-                            <div className={'product-card__body'}>
-                                <div className={'product-card__info'}>
-                                    <p className={'product-card__category'}>Chair</p>
-                                    <p className={'product-card__title'}>Sakarias Armchair</p>
-                                    <img src={'/icon/five-star.svg'} alt='star icon' className={'product-card__stars'} />
+                            <div className={"product-card__body"}>
+                                <div className={"product-card__info"}>
+                                    <p className={"product-card__category"}>Chair</p>
+                                    <p className={"product-card__title"}>Sakarias Armchair</p>
+                                    <img
+                                        src={"/icon/five-star.svg"}
+                                        alt='star icon'
+                                        className={"product-card__stars"}
+                                    />
                                 </div>
-                                <div className={'product-card__footer'}>
-                                    <span className={'product-card__price'}>123$</span>
-                                    <img className={'product-card__add'} src={'/icon/add.svg'} alt='add icon' />
+                                <div className={"product-card__footer"}>
+                                    <span className={"product-card__price"}>123$</span>
+                                    <img
+                                        className={"product-card__add"}
+                                        src={"/icon/add.svg"}
+                                        alt='add icon'
+                                    />
                                 </div>
                             </div>
                         </SwiperSlide>
                     ))}
                 </Swiper>
             </div>
-            <div className={'products__viewall'}>
-                <span>View All</span>
-                <span>
-                    <img src='/icon/arrow.svg' alt='arrow svg' />
-                </span>
-            </div>
+            <ActionButton className={"products__viewall"} text={"View All"} />
         </section>
     );
 }

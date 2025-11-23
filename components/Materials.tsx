@@ -1,4 +1,5 @@
 import React from "react";
+import ActionButton from "@/components/ActionButton";
 
 const Materials = () => {
     return (
@@ -13,12 +14,7 @@ const Materials = () => {
                     by people who are professionals in their fields with an elegant and lucurious
                     style and with premium quality materials
                 </p>
-                <div className={"materials__more"}>
-                    <span>More Info</span>
-                    <span>
-                        <img src='/icon/arrow.svg' alt='arrow svg' />
-                    </span>
-                </div>
+                <ActionButton className={"materials__more"} text={"More Info"} />
             </div>
             <div className={"materials__images"}>
                 <div className={"materials__column--tall"}>
@@ -26,7 +22,8 @@ const Materials = () => {
                     <img src='/images/material-sofa.png' alt='' className={"materials__sofa"} />
                 </div>
                 <div className={"materials__column--short"}>
-                    <img src='/images/material-chairs.png' alt='' />
+                    <img src='/images/sofa-right-bg.png' alt='' className={"back-bg"} />
+                    <img src='/images/material-chairs.png' alt='' className={"chairs-image"} />
                 </div>
             </div>
         </section>

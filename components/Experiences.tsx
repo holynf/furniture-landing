@@ -1,4 +1,5 @@
 import React from "react";
+import ActionButton from "@/components/ActionButton";
 
 const Experiences = () => {
     return (
@@ -26,12 +27,7 @@ const Experiences = () => {
                     by people who are professionals in their fields with an elegant and lucurious
                     style and with premium quality materials
                 </p>
-                <div className={"experiences__more"}>
-                    <span>More Info</span>
-                    <span>
-                        <img src='/icon/arrow.svg' alt='arrow svg' />
-                    </span>
-                </div>
+                <ActionButton className={"experiences__more"} text={"More Info"} />
             </div>
         </section>
     );

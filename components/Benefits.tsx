@@ -1,4 +1,5 @@
 import React from "react";
+import ActionButton from "@/components/ActionButton";
 
 interface DataType {
     title: string;
@@ -34,12 +35,7 @@ function Benefits() {
                     <div key={index} className={"benefits__item"}>
                         <h3 className={"benefits__item-title"}>{data.title}</h3>
                         <span className={"benefits__item-content"}>{data.content}</span>
-                        <div className={"benefits__item-more"}>
-                            <span>More Info</span>
-                            <span>
-                                <img src={'/icon/arrow.svg'} alt={'arrow svg'} />
-                            </span>
-                        </div>
+                        <ActionButton className={"benefits__item-more"} text={"More Info"} />
                     </div>
                 ))}
             </section>

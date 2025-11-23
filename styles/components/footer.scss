@@ -9,7 +9,8 @@ footer {
         @apply text-[#1E1E1E] text-[26px] font-bold;
       }
     }
-    .access{
+
+    .access {
       @apply flex flex-col gap-5;
 
       .title {
@@ -17,7 +18,8 @@ footer {
       }
     }
   }
-  .copyright{
+
+  .copyright {
     @apply flex justify-between items-center;
 
     .text {
