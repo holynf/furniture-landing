@@ -2,7 +2,27 @@ import React from "react";
 
 function Landing() {
     return (
-        <article className={"landing"}>
+        <article className={"landing "}>
+            <img
+                src='/images/landing-point.png'
+                alt=''
+                className={"absolute bottom-[190px] right-[34px]"}
+            />
+            <img
+                src='/images/landing-point.png'
+                alt=''
+                className={"absolute bottom-[230px] right-[710px]"}
+            />
+            <img
+                src='/images/landing-point.png'
+                alt=''
+                className={"absolute bottom-[270px] left-[130px]"}
+            />
+            <img
+                src='/images/landing-sofa-color.png'
+                alt=''
+                className={"absolute bottom-[350px] left-[320px]"}
+            />
             <section className='navbar'>
                 <div className={"logo"}>Panto</div>
                 <ul className={"list"}>

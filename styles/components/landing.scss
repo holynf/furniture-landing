@@ -1,6 +1,6 @@
 .landing {
   background-image: url("/images/landing-image.png");
-  @apply pt-10 px-20 text-white  bg-no-repeat bg-center bg-cover h-[1084px];
+  @apply pt-10 px-20 text-white bg-no-repeat bg-center bg-cover h-[1084px] relative;
 
   .navbar {
     @apply grid grid-cols-3 items-center;
